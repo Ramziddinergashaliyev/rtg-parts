@@ -1,0 +1,32 @@
+.logistic {
+    padding: 120px 0px 20px;
+
+    &-title {
+        font-size: 46px;
+        line-height: 58px;
+        font-weight: 500;
+        color: #332;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    &__boxs {
+        display: grid;
+        grid-template-columns: 1fr 500px;
+        grid-gap: 20px;
+
+        &-left {
+            img {
+                width: 100%;
+            }
+        }
+
+        &-right {
+            &-title {
+                font-size: 18px;
+                font-weight: 300;
+                color: rgb(37, 37, 37);
+            }
+        }
+    }
+}

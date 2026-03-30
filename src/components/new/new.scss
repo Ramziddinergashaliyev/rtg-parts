@@ -1,0 +1,208 @@
+.new {
+    padding: 60px 0 20px;
+    background: #ffffff;
+
+    &__header {
+        margin-bottom: 52px;
+        animation: fadeDown 0.7s ease both;
+    }
+
+    &__tag {
+        display: inline-block;
+        background: #fff0f0;
+        color: #e53935;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 30px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-size: clamp(30px, 4vw, 46px);
+        font-weight: 800;
+        color: #333;
+        line-height: 1.15;
+
+        span {
+            color: #e53935;
+            position: relative;
+        }
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        color: #888;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+
+        @media (max-width: 1100px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 560px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid #f0f0f0;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        transition:
+            transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+            box-shadow 0.35s ease,
+            opacity 0.6s ease,
+            translateY 0.6s ease;
+
+        opacity: 0;
+        transform: translateY(40px);
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.11);
+
+            .new__card-img-wrap img {
+                transform: scale(1.07);
+            }
+
+            .new__card-overlay {
+                opacity: 1;
+            }
+
+            .new__card-link svg {
+                transform: translateX(6px);
+            }
+
+            .new__card-link::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__card-img-wrap {
+        position: relative;
+        overflow: hidden;
+        height: 210px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+    }
+
+    &__card-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    &__card-category {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        background: #e53935;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 5px 13px;
+        border-radius: 30px;
+        box-shadow: 0 4px 12px rgba(229, 57, 53, 0.35);
+    }
+
+    &__card-body {
+        padding: 18px 20px 22px;
+    }
+
+    &__card-date {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        color: #aaa;
+        font-weight: 500;
+        margin-bottom: 10px;
+
+        svg {
+            width: 13px;
+            height: 13px;
+            color: #ccc;
+        }
+    }
+
+    &__card-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1a1a1a;
+        line-height: 1.6;
+        margin: 0 0 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 67px;
+    }
+
+    &__card-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #e53935;
+        text-decoration: none;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #e53935;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        svg {
+            width: 15px;
+            height: 15px;
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
