@@ -3,7 +3,7 @@ import img1 from "../../assets/news/one.png"
 import img2 from "../../assets/news/two.webp"
 import img3 from "../../assets/news/three.jpeg"
 import img4 from "../../assets/news/four.jpeg"
-import './New.scss'
+import './new.scss'
 
 const NewsData = [
     {
