@@ -10,6 +10,7 @@ const Hero = () => {
   const [slideStates, setSlideStates] = useState(() =>
     images.map((_, i) => (i === 0 ? 'active' : 'idle'))
   )
+
   const [dirMap, setDirMap] = useState(() => images.map(() => 1))
 
   const currentRef = useRef(0)
@@ -36,7 +37,7 @@ const Hero = () => {
       s[nextIndex] = 'enter'
       return s
     })
-
+    
     setTimeout(() => {
       setSlideStates(prev => {
         const s = [...prev]
@@ -46,6 +47,7 @@ const Hero = () => {
       })
       animating.current = false
     }, 1700)
+
   }, [])
 
   const next = useCallback(() => {
@@ -71,6 +73,7 @@ const Hero = () => {
 
   return (
     <section className="hero">
+
       <div className="hero__track">
         {images.map((img, i) => {
           const state = slideStates[i]
@@ -93,6 +96,7 @@ const Hero = () => {
           <path d="M15 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
+
       <button className="hero__arrow hero__arrow--next" onClick={next} aria-label="Next">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />

@@ -11,6 +11,7 @@ const Post = () => {
         {
           POSTDATA?.map(el => (
             <div key={el?.id} className="post__card">
+
               <div className="post__card-img">
                 <img src={el?.img} alt="" />
               </div>
@@ -19,6 +20,7 @@ const Post = () => {
                 <h2 className="post__card-info-title">{el?.title}</h2>
                 <p className="post__card-info-text">{el?.text}</p>
               </div>
+
             </div>
           ))
         }
@@ -27,6 +29,5 @@ const Post = () => {
     </div>
   )
 }
-
 
 export default Post

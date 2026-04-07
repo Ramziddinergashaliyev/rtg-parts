@@ -40,7 +40,6 @@ import img39 from "../assets/logo/img39.png"
 import img40 from "../assets/logo/img38.png"
 import img41 from "../assets/logo/img41.png"
 
-
 export const POSTDATA = [
     {
         id: 1,

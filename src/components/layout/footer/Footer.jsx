@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
       </div>
-      
+
       <p className="footer-bottom-title">Все права защищены © 2026</p>
     </footer>
   )

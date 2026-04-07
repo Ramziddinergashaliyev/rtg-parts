@@ -30,11 +30,11 @@ const Header = () => {
               <NavLink to={"/post"}>Поставщики</NavLink>
             </li>
 
-            <li className="header__nav__list">
+            {/* <li className="header__nav__list">
               <NavLink to={"/news"}>Новости</NavLink>
-            </li>
+            </li> */}
 
-             <li className="header__nav__list">
+            <li className="header__nav__list">
               <NavLink to={"/logistic"}>Логистический центр</NavLink>
             </li>
 

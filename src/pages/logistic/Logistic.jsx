@@ -4,7 +4,6 @@ import "./logistic.scss"
 import Maps from '../../components/maps/Maps'
 
 const Logistic = () => {
-    
     return (
         <>
             <div className='logistic container'>
@@ -26,5 +25,7 @@ const Logistic = () => {
         </>
     )
 }
+
+
 
 export default Logistic
