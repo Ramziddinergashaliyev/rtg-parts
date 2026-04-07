@@ -4,6 +4,9 @@
     left: 0;
     width: 100%;
     z-index: 990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     border-bottom: 1px solid #aaa3;
     height: 100px;
@@ -59,6 +62,19 @@
                 background-color: #003E87;
                 color: white;
             }
+
+            &-menu {
+                border: none;
+                background-color: transparent;
+                font-size: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -89,5 +105,109 @@
         background: #003E87;
         color: white;
         box-shadow: 0 2px 8px rgba(0, 62, 135, 0.3);
+    }
+
+    &__nav__list-btn {
+        display: none;
+        background-color: transparent;
+        border: none;
+        font-size: 26px;
+        color: #fff;
+
+    }
+
+    &__overlay {
+        display: none;
+
+        @media (max-width: 1135px) {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            z-index: 909;
+            animation: fadeIn 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.437);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width:1400px) {
+        &__nav__item {
+            gap: 12px;
+        }
+    }
+
+    @media (max-width:1135px) {
+        &__nav__item {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 85%;
+            height: 100vh;
+            z-index: 919;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 80px 20px;
+            background-color: #003E87;
+            transition: .6s;
+        }
+
+        &__nav__list {
+            color: white;
+        }
+
+        &__lang {
+            background-color: white;
+        }
+
+        &__nav__right-menu {
+            svg {
+                display: block;
+            }
+        }
+
+        &__nav__item-hide {
+            left: 0;
+        }
+
+        &__nav__list-btn {
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+    }
+
+    @media (max-width:500px) {
+        height: 80px;
+
+        &__nav__logo {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &__nav__right-btns {
+            padding: 6px;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
     }
 }

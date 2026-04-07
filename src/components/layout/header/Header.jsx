@@ -3,9 +3,12 @@ import logo from "../../../assets/logo.webp"
 
 import "./header.scss"
 import { NavLink } from 'react-router-dom';
+import { IoMdClose } from 'react-icons/io';
+import { FiMenu } from 'react-icons/fi';
 
 const Header = () => {
   const [lang, setLang] = useState("RU");
+  const [hide, setHide] = useState(false)
 
   return (
     <header className='header'>
@@ -16,7 +19,11 @@ const Header = () => {
             <img src={logo} alt="header-logo" />
           </NavLink>
 
-          <ul className="header__nav__item">
+          {hide && (
+            <div className="header__overlay" onClick={() => setHide(false)} />
+          )}
+
+          <ul className={`header__nav__item ${hide ? "header__nav__item-hide" : ""}`}>
 
             <li className="header__nav__list">
               <NavLink to={"/"}>Главная</NavLink>
@@ -29,10 +36,6 @@ const Header = () => {
             <li className="header__nav__list">
               <NavLink to={"/post"}>Поставщики</NavLink>
             </li>
-
-            {/* <li className="header__nav__list">
-              <NavLink to={"/news"}>Новости</NavLink>
-            </li> */}
 
             <li className="header__nav__list">
               <NavLink to={"/logistic"}>Логистический центр</NavLink>
@@ -48,12 +51,17 @@ const Header = () => {
                 </button>
               ))}
             </div>
+
+            <button onClick={() => setHide(false)} className="header__nav__list-btn">
+              <IoMdClose />
+            </button>
           </ul>
 
           <div className="header__nav__right">
             <NavLink className='header__nav__right-btns' to={"/contact"}>
               Контакты
             </NavLink>
+            <button onClick={() => setHide(true)} className='header__nav__right-menu'><FiMenu /></button>
           </div>
 
         </nav>
