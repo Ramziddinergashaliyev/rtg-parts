@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import img from "../../assets/uzb-map.png"
+import img from "../../assets/uzb-map.webp"
 import "./logistic.scss"
 import Maps from '../../components/maps/Maps'
 

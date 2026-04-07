@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import img from "../../assets/aboutbg.jpg"
-import img1 from "../../assets/certificate/img1.jpg"
-import img2 from "../../assets/certificate/img2.jpg"
-import img3 from "../../assets/certificate/img3.jpg"
-import img4 from "../../assets/certificate/img4.jpg"
+import img from "../../assets/aboutbg.webp"
+import img1 from "../../assets/certificate/img1.webp"
+import img2 from "../../assets/certificate/img2.webp"
+import img3 from "../../assets/certificate/img3.webp"
+import img4 from "../../assets/certificate/img4.webp"
 
 import "./about.scss"
 import Maps from '../../components/maps/Maps'

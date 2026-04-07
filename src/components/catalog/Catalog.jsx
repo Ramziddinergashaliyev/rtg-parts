@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
-import img1 from "../../assets/catalog/img1.jpg"
-import img2 from "../../assets/catalog/img2.jpg"
-import img3 from "../../assets/catalog/img3.jpg"
-import img4 from "../../assets/catalog/img4.jpg"
-import img5 from "../../assets/catalog/img5.jpg"
-import img6 from "../../assets/catalog/img6.jpg"
+import img1 from "../../assets/catalog/img1.webp"
+import img2 from "../../assets/catalog/img2.webp"
+import img3 from "../../assets/catalog/img3.webp"
+import img4 from "../../assets/catalog/img4.webp"
+import img5 from "../../assets/catalog/img5.webp"
+import img6 from "../../assets/catalog/img6.webp"
 import "./catalog.scss"
 
 const CatalogData = [

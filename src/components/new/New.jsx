@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
-import img1 from "../../assets/news/one.png"
+import img1 from "../../assets/news/one.webp"
 import img2 from "../../assets/news/two.webp"
-import img3 from "../../assets/news/three.jpeg"
-import img4 from "../../assets/news/four.jpeg"
+import img3 from "../../assets/news/three.webp"
+import img4 from "../../assets/news/four.webp"
 import './new.scss'
 
 const NewsData = [
