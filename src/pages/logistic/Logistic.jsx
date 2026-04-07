@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from "../../assets/uzb-map.png"
 import "./logistic.scss"
 import Maps from '../../components/maps/Maps'
 
 const Logistic = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <div className='logistic container'>
