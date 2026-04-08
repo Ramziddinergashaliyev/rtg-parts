@@ -6,6 +6,26 @@
     background: #000;
     margin-top: 100px;
 
+    @media (max-width: 1024px) {
+        height: 60vh;
+        margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+        height: 55vh;
+        margin-top: 70px;
+    }
+
+    @media (max-width: 480px) {
+        height: 50vh;
+        margin-top: 60px;
+    }
+
+    @media (max-width: 360px) {
+        height: 45vh;
+        margin-top: 56px;
+    }
+
     &__track {
         position: absolute;
         inset: 0;
@@ -97,6 +117,42 @@
         &:active {
             transform: translateY(-50%) scale(0.93);
         }
+
+        @media (max-width: 768px) {
+            width: 42px;
+            height: 42px;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            &--prev {
+                left: 16px;
+            }
+
+            &--next {
+                right: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            width: 36px;
+            height: 36px;
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+
+            &--prev {
+                left: 12px;
+            }
+
+            &--next {
+                right: 12px;
+            }
+        }
     }
 
     &__dots {
@@ -107,6 +163,11 @@
         z-index: 10;
         display: flex;
         gap: 10px;
+
+        @media (max-width: 480px) {
+            bottom: 16px;
+            gap: 8px;
+        }
     }
 
     &__dot {
@@ -118,6 +179,14 @@
         cursor: pointer;
         transition: background 0.3s, transform 0.3s;
         padding: 0;
+
+        @media (max-width: 480px) {
+            width: 7px;
+            height: 7px;
+            padding: 6px;
+            background-clip: content-box;
+            box-sizing: content-box;
+        }
 
         &.is-active {
             background: #fff;

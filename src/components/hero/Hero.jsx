@@ -37,7 +37,7 @@ const Hero = () => {
       s[nextIndex] = 'enter'
       return s
     })
-    
+
     setTimeout(() => {
       setSlideStates(prev => {
         const s = [...prev]

@@ -9,7 +9,7 @@
 
     &__info {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
 
         &-card {
@@ -30,6 +30,31 @@
                 color: #333;
             }
         }
-        
+
+    }
+
+    @media (max-width:850px) {
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__info-card-title {
+            font-size: 42px;
+        }
+
+        &__info-card-text {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width:680px) {
+        &__info {
+            grid-template-columns: 1fr;
+        }
+
+        &__title {
+            padding: 20px 0px;
+        }
     }
 }

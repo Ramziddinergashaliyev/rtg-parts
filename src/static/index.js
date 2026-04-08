@@ -67,7 +67,7 @@ export const POSTDATA = [
     },
     {
         id: 5,
-        title: "Conitech",
+        title: "Contitech",
         text: "производитель автозапчастей",
         img: img5
     },

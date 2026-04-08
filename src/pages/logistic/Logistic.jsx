@@ -4,9 +4,11 @@ import "./logistic.scss"
 import Maps from '../../components/maps/Maps'
 
 const Logistic = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
     return (
         <>
             <div className='logistic container'>

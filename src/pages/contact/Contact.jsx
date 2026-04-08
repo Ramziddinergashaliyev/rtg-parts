@@ -51,9 +51,11 @@ export default function Contact() {
             <span className="contact-header__tag-dot" />
             Get in touch
           </span>
+
           <h1 className="contact-header__title">
             Let's <em>talk.</em>
           </h1>
+
           <p className="contact-header__sub">
             Have a project in mind? We'd love to hear about it.
           </p>

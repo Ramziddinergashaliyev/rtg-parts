@@ -1,6 +1,10 @@
 .maps {
     margin-top: 80px;
 
+    @media (max-width:1000px) {
+        margin-top: 30px;
+    }
+
     iframe {
         border: none;
         display: block;

@@ -10,7 +10,7 @@ const Statistic = () => {
                     <h2 className='statistic__info-card-title'>20+</h2>
                     <p className='statistic__info-card-text'>лет на рынке</p>
                 </div>
-                
+
                 <div className="statistic__info-card">
                     <h2 className='statistic__info-card-title'>100+</h2>
                     <p className='statistic__info-card-text'>Партнёров</p>

@@ -50,4 +50,36 @@
             }
         }
     }
+
+    @media (max-width:1000px) {
+        &__cards {
+            grid-gap: 15px 20px;
+        }
+
+        &__card-img {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        &__card-info {
+            gap: 0px;
+        }
+
+        &__card-info-text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    @media (max-width:750px) {
+        &__card {
+            gap: 24px;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+    }
 }

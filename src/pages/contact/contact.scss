@@ -18,7 +18,6 @@ $accent: #0066ff;
 $success: #1a7f5a;
 $success-bg: #eaf5f0;
 
-
 .contact-root {
     position: relative;
     overflow: hidden;
@@ -187,7 +186,6 @@ $success-bg: #eaf5f0;
         margin-bottom: 1.4rem;
     }
 
-    // ─── Phone block ──────────────────────────────────────
     &__phones {
         margin-bottom: 1.25rem;
     }
@@ -201,7 +199,7 @@ $success-bg: #eaf5f0;
 
     &__phone-list {
         list-style: none;
-        padding-left: calc(36px + 0.85rem); // aligns with icon width + gap
+        padding-left: calc(36px + 0.85rem); 
         display: flex;
         flex-direction: column;
         gap: 0.35rem;
@@ -221,7 +219,6 @@ $success-bg: #eaf5f0;
         }
     }
 
-    // ─── Generic list (email, location) ───────────────────
     &__list {
         list-style: none;
         display: flex;

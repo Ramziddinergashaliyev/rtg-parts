@@ -32,7 +32,6 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Leazy from "./components/leazy/Leazy";
 
-// Lazy importlar
 const Layout = lazy(() => import("./components/layout/Layout"));
 const Home = lazy(() => import("./pages/home/Home"));
 const About = lazy(() => import("./pages/about/About"));
@@ -41,7 +40,6 @@ const Post = lazy(() => import("./pages/post/Post"));
 const News = lazy(() => import("./pages/news/News"));
 const Logistic = lazy(() => import("./pages/logistic/Logistic"));
 
-// Error Boundary
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
