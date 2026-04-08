@@ -63,7 +63,6 @@ const New = () => {
             <div className='container'>
 
                 <div className='new__header'>
-                    <span className='new__tag'>Новости</span>
                     <h2 className='new__title'>Последние <span>новости</span></h2>
                     <p className='new__subtitle'>Следите за нашими последними новостями и мероприятиями</p>
                 </div>
