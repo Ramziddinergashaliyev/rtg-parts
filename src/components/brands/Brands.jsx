@@ -41,14 +41,16 @@ import img39 from "../../assets/logo/img38.png"
 import img40 from "../../assets/logo/img39.png"
 
 import "./brands.scss"
+import { useTranslation } from 'react-i18next'
 
 const Brands = () => {
+  const { t } = useTranslation()
 
   const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37, img38, img39, img40]
 
   return (
     <div className='brands container'>
-      <h3 className="brands-title">Бренды</h3>
+      <h3 className="brands-title">{t("Бренды")}</h3>
 
       <div className="brands__imgs">
         {

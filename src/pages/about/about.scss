@@ -65,4 +65,26 @@
             }
         }
     }
+
+
+    @media (max-width:800px) {
+        &__info {
+            padding: 20px 0px 10px;
+        }
+    }
+
+    @media (max-width:500px) {
+        &__info-imgs {
+            grid-template-columns: 1fr;
+        }
+
+        &__info-title {
+            font-size: 24px;
+        }
+
+        &__top__right-text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }

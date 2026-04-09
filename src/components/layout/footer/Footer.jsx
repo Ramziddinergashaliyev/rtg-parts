@@ -5,8 +5,11 @@ import "./footer.scss"
 import { FaPhoneAlt } from 'react-icons/fa'
 import { MdOutlineMail } from 'react-icons/md'
 import { FiMapPin } from 'react-icons/fi'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className='footer'>
       <div className="footer-container container">
@@ -32,7 +35,7 @@ const Footer = () => {
 
       </div>
 
-      <p className="footer-bottom-title">Все права защищены © 2026</p>
+      <p className="footer-bottom-title">{t("2026")}</p>
     </footer>
   )
 }

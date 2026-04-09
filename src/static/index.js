@@ -289,3 +289,252 @@ export const POSTDATA = [
     }
 
 ]
+
+export const POSTDATAEn = [
+    {
+        id: 1,
+        title: "Shell",
+        text: "High-quality motor oil",
+        img: img1
+    },
+    {
+        id: 2,
+        title: "PHC Valeo",
+        text: "Manufacturer of clutch components for vehicles",
+        img: img2
+    },
+    {
+        id: 3,
+        title: "Bosch",
+        text: "German multinational engineering and technology company",
+        img: img3
+    },
+    {
+        id: 4,
+        title: "TRT-Parts",
+        text: "Uzbek-Korean enterprise TECHNOLOGIES OF REAL TIME",
+        img: img4
+    },
+    {
+        id: 5,
+        title: "Contitech",
+        text: "Auto parts manufacturer",
+        img: img5
+    },
+    {
+        id: 6,
+        title: "Valecooil",
+        text: "Manufacturer of motor oils, brake and coolant fluids, automotive chemicals and oil filters",
+        img: img6
+    },
+    {
+        id: 7,
+        title: "KYB",
+        text: "Major Japanese manufacturer of shock absorbers",
+        img: img7
+    },
+    {
+        id: 8,
+        title: "Bilstein",
+        text: "Manufacturer of suspension components for high-end vehicles",
+        img: img8
+    },
+    {
+        id: 9,
+        title: "Febi",
+        text: "Supplier of spare parts for passenger cars and commercial vehicles",
+        img: img9
+    },
+    {
+        id: 10,
+        title: "Textar",
+        text: "Manufacturer of high-quality automotive brake components",
+        img: img10
+    },
+    {
+        id: 11,
+        title: "Swag",
+        text: "Supplier of spare parts for passenger cars and commercial vehicles",
+        img: img11
+    },
+    {
+        id: 12,
+        title: "Blue Print",
+        text: "Auto parts manufacturer",
+        img: img12
+    },
+    {
+        id: 13,
+        title: "Brembo",
+        text: "Italian manufacturer of automotive braking systems",
+        img: img13
+    },
+    {
+        id: 14,
+        title: "Michelin",
+        text: "French tire manufacturing company",
+        img: img14
+    },
+    {
+        id: 15,
+        title: "Remsa",
+        text: "Manufacturer of automotive braking systems",
+        img: img15
+    },
+    {
+        id: 16,
+        title: "Mitsuboshi",
+        text: "Major manufacturer of industrial and automotive drive belts",
+        img: img16
+    },
+    {
+        id: 17,
+        title: "DRB",
+        text: "Manufacturer of automotive belts",
+        img: img17
+    },
+    {
+        id: 18,
+        title: "SM",
+        text: "SM Motorenteile — OEM-quality engine component kits",
+        img: img18
+    },
+    {
+        id: 19,
+        title: "CORTECO",
+        text: "Auto parts supplier",
+        img: img19
+    },
+    {
+        id: 20,
+        title: "Aftermarket",
+        text: "Secondary market for automotive industry spare parts",
+        img: img20
+    },
+    {
+        id: 21,
+        title: "AMP",
+        text: "Manufacturer of spare parts for internal combustion engines",
+        img: img21
+    },
+    {
+        id: 22,
+        title: "Excelite",
+        text: "Automotive lamp manufacturer",
+        img: img22
+    },
+    {
+        id: 23,
+        title: "Janmor Poland",
+        text: "Manufacturer and supplier of high-voltage automotive ignition systems",
+        img: img23
+    },
+    {
+        id: 24,
+        title: "Narva",
+        text: "Manufacturer of general and automotive lighting",
+        img: img24
+    },
+    {
+        id: 25,
+        title: "Schaeffler",
+        text: "Automotive components manufacturer",
+        img: img25
+    },
+    {
+        id: 26,
+        title: "NSK",
+        text: "Manufacturer of bearings, linear motion systems and steering components",
+        img: img26
+    },
+    {
+        id: 27,
+        title: "Japanparts",
+        text: "Italian manufacturer of spare parts for Japanese vehicles",
+        img: img27
+    },
+    {
+        id: 28,
+        title: "Mando",
+        text: "Manufacturer of spare parts and components for passenger cars",
+        img: img28
+    },
+    {
+        id: 29,
+        title: "Mahle",
+        text: "One of the world's largest manufacturers of OEM components for internal combustion engines",
+        img: img29
+    },
+    {
+        id: 30,
+        title: "PHG",
+        text: "Manufacturer of rubber technical products",
+        img: img30
+    },
+    {
+        id: 31,
+        title: "Tesla Batteries",
+        text: "TESLA ignition wire sets for passenger cars worldwide",
+        img: img31
+    },
+    {
+        id: 32,
+        title: "Dong Yang Piston",
+        text: "One of the world's largest auto parts manufacturers",
+        img: img32
+    },
+    {
+        id: 33,
+        title: "WIX",
+        text: "Filters for passenger cars and all types of heavy machinery and equipment",
+        img: img33
+    },
+    {
+        id: 34,
+        title: "Dnao Platinum",
+        text: "Manufacturer of automotive braking systems",
+        img: img34
+    },
+    {
+        id: 35,
+        title: "KAINAR",
+        text: "Manufactures and wholesales batteries",
+        img: img35
+    },
+    {
+        id: 36,
+        title: "AtlasBX",
+        text: "Manufactures and wholesales batteries",
+        img: img36
+    },
+    {
+        id: 37,
+        title: "Indigo",
+        text: "Manufactures and wholesales batteries",
+        img: img37
+    },
+    {
+        id: 38,
+        title: "AHP",
+        text: "Engaged in oil refining, petrochemical production and polycrystalline silicon manufacturing",
+        img: img38
+    },
+    {
+        id: 39,
+        title: "S-oil",
+        text: "Engaged in oil refining, petrochemical production and polycrystalline silicon manufacturing",
+        img: img39
+    },
+    {
+        id: 40,
+        title: "Ardeca",
+        text: "Belgian manufacturer and supplier of lubricants and related products for automotive and manufacturing industries",
+        img: img40
+    },
+    {
+        id: 41,
+        title: "THULE",
+        text: "Swedish company Thule Sweden AB — world leader in roof racks, mounting systems, and cargo boxes for skis, snowboards, bikes, kayaks, canoes, windsurfers, and cargo transport",
+        img: img41
+    }
+]
