@@ -9,7 +9,6 @@ const Post = () => {
 
   const DATA = i18n?.language === "en" ? POSTDATAEn : POSTDATA
 
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
