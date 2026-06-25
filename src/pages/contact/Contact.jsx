@@ -18,7 +18,7 @@ const phones = [
 
 const contactInfo = [
   { labelKey: "email_label", value: "info@rtgparts.uz", icon: <FiMail /> },
-  { labelKey: "location_label", value: "Узбекистан, Ташкент, ул.Глинка, 14/1", icon: <FiMapPin /> },
+  { labelKey: "location_label", value: 'Яккасарайский р-н, "Мухандислар МФЙ", ул.Мукими дом 2', icon: <FiMapPin /> },
 ];
 
 export default function Contact() {

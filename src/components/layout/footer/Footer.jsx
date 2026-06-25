@@ -28,8 +28,7 @@ const Footer = () => {
         <div className="footer-email">
           <a className='footer-email-text' href="mailTo: info@rtgparts.uz"><MdOutlineMail />info@rtgparts.uz</a>
           <p className='footer-email-text'><FiMapPin />
-            Узбекистан, Ташкент, ул.Глинка, 14/1
-            Все права защищены © 2026
+            Яккасарайский р-н, "Мухандислар МФЙ", ул.Мукими дом 2
           </p>
         </div>
 
